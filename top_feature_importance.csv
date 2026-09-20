@@ -1,0 +1,11 @@
+feature,importance
+categorical__user_type_0,0.2031603529422041
+categorical__user_type_1,0.19404261328296504
+categorical__product_category_6,0.14390795018245378
+categorical__product_category_3,0.131721447014767
+numeric__discounted_unit_price,0.08572827799711358
+numeric__unit_price,0.08172052475902125
+categorical__product_category_1,0.08071062055085736
+categorical__session_duration_bucket_Very Short,0.07599251799673089
+categorical__visit_weekday_1,0.07428303871911052
+numeric__pages_per_minute,0.0651635164546589

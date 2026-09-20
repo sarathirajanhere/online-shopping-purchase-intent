@@ -1,0 +1,129 @@
+{
+  "raw_rows": 25000,
+  "raw_columns": 29,
+  "missing_cells": 0,
+  "duplicates": 0,
+  "purchase_rate": 0.22464,
+  "train_rows": 20000,
+  "test_rows": 5000,
+  "final_feature_list": {
+    "categorical": [
+      "device_type",
+      "user_type",
+      "marketing_channel",
+      "product_category",
+      "visit_weekday",
+      "visit_month",
+      "visit_season",
+      "session_duration_bucket"
+    ],
+    "numeric": [
+      "unit_price",
+      "discount_percent",
+      "pages_viewed",
+      "time_on_site_sec",
+      "pages_per_minute",
+      "discounted_unit_price"
+    ],
+    "all": [
+      "device_type",
+      "user_type",
+      "marketing_channel",
+      "product_category",
+      "visit_weekday",
+      "visit_month",
+      "visit_season",
+      "session_duration_bucket",
+      "unit_price",
+      "discount_percent",
+      "pages_viewed",
+      "time_on_site_sec",
+      "pages_per_minute",
+      "discounted_unit_price"
+    ]
+  },
+  "excluded_features": {
+    "added_to_cart": "Not demonstrably available before the prediction point; cart path combinations encode the outcome.",
+    "payment_method": "Not demonstrably available before purchase intent prediction; usually collected during payment/checkout.",
+    "rating": "Not demonstrably available before purchase; usually post-experience/review data.",
+    "revenue": "Outcome transaction value.",
+    "revenue_normalized": "Derived from outcome transaction value.",
+    "cart_abandoned": "Reveals failed cart outcome.",
+    "review_text": "Post-purchase/post-experience content.",
+    "review_helpful_votes": "Post-review engagement.",
+    "customer_id": "Identifier.",
+    "session_id": "Identifier.",
+    "product_id": "High-cardinality identifier.",
+    "quantity": "Not demonstrated as final before prediction point.",
+    "discount_amount": "Redundant with retained price and discount fields."
+  },
+  "leakage_audit_result": {
+    "decision": "leakage_safe_after_feature_removal",
+    "prediction_point": "Purchase-intent prediction before purchase completion; no event timestamps prove checkout/cart/review fields are available.",
+    "removed_not_demonstrably_pre_outcome": [
+      "added_to_cart",
+      "payment_method",
+      "rating"
+    ],
+    "added_to_cart_cart_path_counts": [
+      {
+        "added_to_cart": 0,
+        "cart_abandoned": 0,
+        "purchased": 0,
+        "rows": 8883
+      },
+      {
+        "added_to_cart": 1,
+        "cart_abandoned": 0,
+        "purchased": 1,
+        "rows": 5616
+      },
+      {
+        "added_to_cart": 1,
+        "cart_abandoned": 1,
+        "purchased": 0,
+        "rows": 10501
+      }
+    ]
+  },
+  "best_model": "Logistic Regression",
+  "results": {
+    "Logistic Regression": {
+      "accuracy": 0.5384,
+      "precision": 0.26534653465346536,
+      "recall": 0.5966162065894924,
+      "f1": 0.3673245614035088,
+      "roc_auc": 0.5673898009380618,
+      "train_accuracy": 0.5318,
+      "confusion_matrix": [
+        [
+          2022,
+          1855
+        ],
+        [
+          453,
+          670
+        ]
+      ]
+    },
+    "Random Forest": {
+      "accuracy": 0.729,
+      "precision": 0.2661290322580645,
+      "recall": 0.11754229741763135,
+      "f1": 0.16306361951822113,
+      "roc_auc": 0.5316331145318729,
+      "train_accuracy": 0.9997,
+      "confusion_matrix": [
+        [
+          3513,
+          364
+        ],
+        [
+          991,
+          132
+        ]
+      ]
+    }
+  },
+  "artifact_status": "ready_for_submission"
+}
