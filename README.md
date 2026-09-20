@@ -278,7 +278,7 @@ model performance.
 
 ``` text
 │
-├── P10_Online_Shopping_Capstone_Report_FINAL_READY.pdf
+├── P10_Online_Shopping_Capstone_Report.pdf
 ├── P10_Online_Shopping_Purchase_Intent.ipynb
 ├── P_10_Ecommerce.csv
 ├── P10_Ecommerce_cleaned.csv
@@ -292,7 +292,7 @@ model performance.
   -------------------------------------------------------------------------------------------
   File                                                    Description
   ------------------------------------------------------- -----------------------------------
-  `P10_Online_Shopping_Capstone_Report_FINAL_READY.pdf`   Final research-style capstone
+  `P10_Online_Shopping_Capstone_Report.pdf`               Final research-style capstone
                                                           report
 
   `P10_Online_Shopping_Purchase_Intent.ipynb`             Complete executable analysis
