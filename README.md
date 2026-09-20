@@ -39,6 +39,8 @@ The final model selected was **Logistic Regression** based on the held-out F1-sc
 | ROC-AUC | 0.567 |
 
 ## Repository Structure
+
+```text
 │
 ├── P_10_Ecommerce.csv
 ├── P10_Ecommerce_cleaned.csv
