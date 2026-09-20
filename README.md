@@ -276,10 +276,7 @@ model performance.
 
 ## 13. Project Files
 
-The submission folder contains:
-
 ``` text
-IDRA Capstone - SARATHI R/
 │
 ├── P10_Online_Shopping_Capstone_Report_FINAL_READY.pdf
 ├── P10_Online_Shopping_Purchase_Intent.ipynb
