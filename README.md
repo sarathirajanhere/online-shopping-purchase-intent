@@ -2,11 +2,6 @@
 
 ## IDRA Data Science and AI Capstone Project
 
-**Prepared by:** SARATHI R\
-**Institute:** SRM UNIVERSITY AP\
-**Institute Roll No.:** AP25122230040\
-**Enrollment No.:** IDRA-2026-889462
-
 ------------------------------------------------------------------------
 
 ## 1. Project Overview
